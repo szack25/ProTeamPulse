@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2816918E2A92F40A00B8E965 /* ScoresViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816918B2A92F40A00B8E965 /* ScoresViewControllerWrapper.swift */; };
-		2816918F2A92F40A00B8E965 /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816918C2A92F40A00B8E965 /* ScoresViewController.swift */; };
 		284046ED2A8EC32F005C67DF /* ProTeamPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284046EC2A8EC32F005C67DF /* ProTeamPulseApp.swift */; };
 		284046EF2A8EC32F005C67DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284046EE2A8EC32F005C67DF /* ContentView.swift */; };
 		284046F12A8EC332005C67DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284046F02A8EC332005C67DF /* Assets.xcassets */; };
@@ -24,6 +22,8 @@
 		2847435D2A8EE0640098302F /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2847435C2A8EE0640098302F /* NewsTableViewCell.swift */; };
 		2847435F2A8EFE430098302F /* NewsViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2847435E2A8EFE430098302F /* NewsViewControllerWrapper.swift */; };
 		284743612A8EFED00098302F /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284743602A8EFED00098302F /* NewsViewController.swift */; };
+		28FB14AC2A93FD0600B1A1F0 /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB14AB2A93FD0600B1A1F0 /* ScoresViewController.swift */; };
+		28FB14AE2A93FD4E00B1A1F0 /* ScoreViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB14AD2A93FD4E00B1A1F0 /* ScoreViewControllerWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2816918B2A92F40A00B8E965 /* ScoresViewControllerWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoresViewControllerWrapper.swift; path = ../../../../../../.Trash/ScoresViewControllerWrapper.swift; sourceTree = "<group>"; };
-		2816918C2A92F40A00B8E965 /* ScoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoresViewController.swift; path = ../../../../../../.Trash/ScoresViewController.swift; sourceTree = "<group>"; };
 		284046E92A8EC32F005C67DF /* ProTeamPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProTeamPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284046EC2A8EC32F005C67DF /* ProTeamPulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTeamPulseApp.swift; sourceTree = "<group>"; };
 		284046EE2A8EC32F005C67DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +62,8 @@
 		2847435C2A8EE0640098302F /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		2847435E2A8EFE430098302F /* NewsViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewControllerWrapper.swift; sourceTree = "<group>"; };
 		284743602A8EFED00098302F /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		28FB14AB2A93FD0600B1A1F0 /* ScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewController.swift; sourceTree = "<group>"; };
+		28FB14AD2A93FD4E00B1A1F0 /* ScoreViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewControllerWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,9 +174,9 @@
 		284743622A92AA420098302F /* Scores */ = {
 			isa = PBXGroup;
 			children = (
-				2816918C2A92F40A00B8E965 /* ScoresViewController.swift */,
-				2816918B2A92F40A00B8E965 /* ScoresViewControllerWrapper.swift */,
 				284743532A8ED5A20098302F /* Scores.swift */,
+				28FB14AB2A93FD0600B1A1F0 /* ScoresViewController.swift */,
+				28FB14AD2A93FD4E00B1A1F0 /* ScoreViewControllerWrapper.swift */,
 			);
 			path = Scores;
 			sourceTree = "<group>";
@@ -311,16 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FB14AC2A93FD0600B1A1F0 /* ScoresViewController.swift in Sources */,
 				284046EF2A8EC32F005C67DF /* ContentView.swift in Sources */,
 				284743522A8ED5840098302F /* Home.swift in Sources */,
 				2847435D2A8EE0640098302F /* NewsTableViewCell.swift in Sources */,
 				284743612A8EFED00098302F /* NewsViewController.swift in Sources */,
 				284743582A8ED5BE0098302F /* Highlights.swift in Sources */,
+				28FB14AE2A93FD4E00B1A1F0 /* ScoreViewControllerWrapper.swift in Sources */,
 				284743542A8ED5A20098302F /* Scores.swift in Sources */,
 				284743562A8ED5B00098302F /* News.swift in Sources */,
 				284046ED2A8EC32F005C67DF /* ProTeamPulseApp.swift in Sources */,
-				2816918E2A92F40A00B8E965 /* ScoresViewControllerWrapper.swift in Sources */,
-				2816918F2A92F40A00B8E965 /* ScoresViewController.swift in Sources */,
 				2847435F2A8EFE430098302F /* NewsViewControllerWrapper.swift in Sources */,
 				2847435A2A8ED8C60098302F /* News-API-Caller.swift in Sources */,
 			);
