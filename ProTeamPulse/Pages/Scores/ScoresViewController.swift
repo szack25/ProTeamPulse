@@ -14,7 +14,18 @@ class ScoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return tableView
     }()
     
-    let leagues = ["Major League Baseball", "National Football League", "NBA", "Soccer", "Hockey"]
+    let leagues = ["Major League Baseball", "National Football League", "NBA", "NASCAR", "Formula 1"]
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedLeague = leagues[indexPath.row]
+        
+        if selectedLeague == "Major League Baseball" {
+            let mlbViewController = MLBViewController()
+            navigationController?.pushViewController(mlbViewController, animated: true)
+        } else {
+            // Handle navigation for other leagues
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +35,7 @@ class ScoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.delegate = self
         tableView.dataSource = self
         
-        navigationItem.title = "Sports Leagues"
+        navigationItem.title = "Leagues"
     }
     
     // MARK: - UITableViewDelegate & UITableViewDataSource
@@ -37,12 +48,6 @@ class ScoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "LeagueCell") ?? UITableViewCell(style: .default, reuseIdentifier: "LeagueCell")
         cell.textLabel?.text = leagues[indexPath.row]
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedLeague = leagues[indexPath.row]
-        let leagueViewController = LeagueViewController(league: selectedLeague)
-        navigationController?.pushViewController(leagueViewController, animated: true)
     }
 }
 
@@ -62,14 +67,10 @@ class LeagueViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         view.backgroundColor = .white
         
-        let label = UILabel()
-        label.text = "Content for \(league)"
-        label.textAlignment = .center
-        label.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
-        label.center = view.center
-        view.addSubview(label)
     }
+
+    
 }

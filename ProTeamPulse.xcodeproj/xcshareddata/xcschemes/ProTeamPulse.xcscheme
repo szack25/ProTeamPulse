@@ -78,6 +78,11 @@
             value = "342f9795f6234ce482070e494305cd96"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "MLB_API_KEY"
+            value = "3pkp96rerpjvb27wfuw84qj2"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
